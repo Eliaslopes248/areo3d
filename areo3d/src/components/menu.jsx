@@ -6,21 +6,21 @@ export default function Menu() {
 
         {/* top option, with home, contact us, exit */}
 
-        <div className="w-full h-[25vh] border-[.01px] bg-[#0c0d0d] border-[#1c1c1c] items-center flex absolute ">
+        <div className="w-full h-[20vh] border-[.01px] bg-[#0c0d0d] border-[#1c1c1c] items-center flex absolute ">
 
               <h1 className='text-white text-3xl ml-[3vw] '>
                 Areo3D
               </h1>
 
-              <button className='ml-auto text-black mr-[2vw] bg-white p-[8px] w-[100px] h-fit rounded-2xl'>
-                Contact
+              <button className='ml-auto text-black mr-[2vw] bg-white p-[6px] w-[100px] h-fit rounded-2xl hover:bg-gray-200 duration-[.1s]'>
+                Contact us
               </button>
 
         </div>
 
         {/* rows with nav options */}
 
-    <div className="mt-[25vh] flex-wrap">
+    <div className="mt-[20vh] flex-wrap">
         <div className="w-full h-fit flex flex-wrap ">
             <div className=" w-full md:w-[50%] h-[25vh] border-[.01px] border-[#1f1e1e] flex items-center 
             justify-start pl-[48px] hover:bg-[#1c1c1c] duration-[.1s] ">
