@@ -2,8 +2,15 @@ import { useState } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 function App() {
-  const [count, setCount] = useState(0)
 
+  // menu toggle logic 
+  const [menuStatus, setMenu] = useState(true);
+  
+    const menuToggle = ()=>{
+  
+      setMenu(prev=>(!prev))
+      console.log(menuStatus)
+    }
 
   // set up routes
   return (
@@ -12,7 +19,7 @@ function App() {
     
         <Routes>
 
-              <Route path='/' element={<Home/>}/>
+              <Route path='/' element={<Home menuStatus={menuStatus} menuToggle={menuToggle} />}/>
 
         </Routes>
     

@@ -1,24 +1,21 @@
 import React from 'react'
+import baseLogo from '../images/baseLogo.png'
+import invertedLogo from '../images/invertedLogo.png'
+import { HiOutlineMenuAlt4 } from "react-icons/hi";
+import { IoMdClose } from "react-icons/io";
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+import { useState } from 'react';
 
-export default function Menu() {
+export default function Menu({menuStatus, menuToggle}) {
+
   return (
-    <div className='w-full h-[100vh] flex flex-col bg-[#0c0d0d]'>
+    
+    <div className='w-full h-[100vh] flex flex-col bg-[#0c0d0d] z-0 absolute'> 
 
-        {/* top option, with home, contact us, exit */}
-
-        <div className="w-full h-[20vh] border-[.01px] bg-[#0c0d0d] border-[#1c1c1c] items-center flex absolute ">
-
-              <h1 className='text-white text-3xl ml-[3vw] '>
-                Areo3D
-              </h1>
-
-              <button className='ml-auto text-black mr-[2vw] bg-white p-[6px] w-[100px] h-fit rounded-2xl hover:bg-gray-200 duration-[.1s]'>
-                Contact us
-              </button>
-
-        </div>
-
-        {/* rows with nav options */}
+      {/* rows with nav options */}
 
     <div className="mt-[20vh] flex-wrap">
         <div className="w-full h-fit flex flex-wrap ">
@@ -46,14 +43,49 @@ export default function Menu() {
         </div>
 
         {/* footer */}
-        <div className=" w-full h-[25vh] border-[.1px] border-[#1f1e1e]  bg-[#0c0d0d]  flex justify-start  "></div>
+        <div className=" w-full h-[25vh] border-[.1px] border-[#1f1e1e]  bg-[#0c0d0d] flex pl-[20px] flex-wrap md:justify-start">
 
-            <div className=""></div>
+            <div className=" w-full md:w-[30vw] h-[10vh] md:h-full flex-col flex justify-center gap-[15px] p-[20px]">
+                  <p className='text-gray-300 md:text-[13px] text-[13px] md:mb-[20px]'>
+                    Copyright ©2025 ÆRO3D. All rights reserved.
+                  </p>
+            </div>
 
-            <div className=""></div>
+            <div className="  w-full md:w-[30vw] h-[10vh] md:h-full flex-col flex justify-center gap-[15px] p-[20px]">
+                <p className='text-gray-300 md:text-[13px] text-[13px] md:mb-[20px]'>
+                Term of Services  Privacy Policy  Cookie Policy
+                </p>
+            </div>
 
-            <div className=""></div>
+            <div className=" w-full md:w-[30vw] h-fit md:h-full flex-col bg-[#0c0d0d] flex justify-center gap-[15px] p-[20px]">
 
+                <h3 className='text-white'>Follow us</h3>
+                <div className="w-full h-fit  flex justify-start gap-[15px] items-center">
+
+                  <a href="">
+                    <FaFacebook className='text-white size-[30px]' />
+                  </a>
+
+                  <a href="">
+                    <FaInstagram className='text-white size-[30px]' />
+                  </a>
+
+                  <a href="">
+                    <FaLinkedin className='text-white size-[30px]' />
+                  </a>
+
+                  <a href="">
+                    <FaYoutube className='text-white size-[30px]' />
+                  </a>
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+            
         </div>
     </div>
   )
