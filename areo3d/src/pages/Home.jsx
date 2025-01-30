@@ -1,8 +1,11 @@
 import Menu from '../components/menu'
+import { HeroCard } from '../components/herocard';
 import baseLogo from '../images/baseLogo.png'
 import invertedLogo from '../images/invertedLogo.png'
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
+import { Partners } from '../components/partners';
+
 
 
 import React from 'react'
@@ -28,9 +31,12 @@ export default function Home({menuStatus, menuToggle}) {
           
                   </div>
 
-        <div className={`bg-white w-[98vw] translate-x-[1vw] rounded-[20px] h-full absolute z-1 mt-[10px] ${!menuStatus?"md:translate-y-[100vh] translate-y-[155vh]":"translate-y-[0vh]"} duration-[.3s]` }>
+        <div className={`bg-white w-[98vw] translate-x-[1vw] rounded-[20px] h-fit absolute z-1 mt-[10px] ${!menuStatus?"md:translate-y-[100vh] translate-y-[155vh]":"translate-y-[0vh]"} duration-[.3s] pt-[25vh]` }>
              
-
+          {/* all website body components here */}
+          <HeroCard/>
+         
+          <Partners/>
 
 
         </div>
