@@ -5,10 +5,9 @@ import invertedLogo from '../images/invertedLogo.png'
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
 import { Partners } from '../components/partners';
-
-
-
+import { Services } from '../components/services';
 import React from 'react'
+
 
 export default function Home({menuStatus, menuToggle}) {
   return (
@@ -37,6 +36,8 @@ export default function Home({menuStatus, menuToggle}) {
           <HeroCard/>
          
           <Partners/>
+
+          <Services/>
 
 
         </div>
