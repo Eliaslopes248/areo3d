@@ -36,15 +36,16 @@ export function HeroCard(){
             </style>
 
 
-            <h1 id="hero-h1" className="text-black text-7xl p-[15px] md:text-[100px] md:ml-[3vw]" >
+            <h1 id="hero-h1" className="text-black ml-[5vw] text-6xl p-[15px] md:text-[100px]
+            md:ml-[10vw] md:text-9xl lg:ml-[15vw]" >
                 Design. <br />
                 Market. <br />
                 Optimize.
             </h1>
 
-            <p id="hero-subtext" className="text-gray-500 p-[15px] text-lef ml-[3vw] 
-            md:w-[40vw] w-[90vw] md:text-[20px]">
-                We build your online presence in 3 dimensions: Web Design, Digital Marketing and Optimization.
+            <p id="hero-subtext" className="text-gray-500 p-[15px] text-left ml-[5vw] 
+            md:w-[60vw] w-[90vw] max-w-[600px] md:text-[20px] md:ml-[10vw] lg:ml-[15vw] lg:w-[35vw]">
+                We build your online presence in 3 dimensions: Web Design, Digital Marketing, and Optimization. We create stunning websites, drive traffic with targeted marketing, and boost SEO for better conversions.
             </p>
 
         </div>
