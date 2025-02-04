@@ -21,7 +21,7 @@ export default function Menu({menuStatus, menuToggle}) {
         <div className="w-full h-fit flex flex-wrap ">
             <div className=" w-full md:w-[50%] h-[25vh] border-[.01px] border-[#1f1e1e] flex items-center 
             justify-start pl-[48px] hover:bg-[#1c1c1c] duration-[.1s] ">
-                <h1 className='text-gray-200 text-[40px] font-[500]  tracking-[-2px] '>Services</h1>
+                <h1 className='text-gray-200 text-[40px] font-[500]  tracking-[-2px] '>Home</h1>
             </div>
 
             <div className=" w-full md:w-[50%] h-[25vh] border-[.1px] border-[#1f1e1e] flex items-center 
@@ -33,12 +33,12 @@ export default function Menu({menuStatus, menuToggle}) {
         <div className="w-full h-fit flex flex-wrap ">
             <div className="w-full md:w-[50%] h-[25vh] border-[.1px] border-[#1f1e1e] flex items-center 
             justify-start pl-[48px] hover:bg-[#1c1c1c] duration-[.1s]">
-                <h1 className='text-gray-200 text-[40px] font-[500]  tracking-[-2px] ' >Website Audit</h1>
+                <h1 className='text-gray-200 text-[40px] font-[500]  tracking-[-2px] ' >Services</h1>
             </div>
 
             <div className="  bg-[#0c0d0d]  w-full md:w-[50%] h-[25vh] border-[.1px] border-[#1f1e1e] flex items-center justify-start 
             pl-[48px] hover:bg-[#1c1c1c] duration-[.1s]">
-              <h1 className='text-gray-200 text-[40px] font-[500]  tracking-[-2px] ' >Partners</h1>
+              <h1 className='text-gray-200 text-[40px] font-[500]  tracking-[-2px] ' >Contact</h1>
             </div>
         </div>
 

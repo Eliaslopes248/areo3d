@@ -10,6 +10,7 @@ import { Promise } from '../components/ourpromise';
 import { InDepthServices } from '../components/in-depth-services';
 import { TellUs } from '../components/tellus';
 import React from 'react'
+import { AboutUs } from '../components/about';
 
 
 export default function Home({menuStatus, menuToggle}) {
@@ -47,6 +48,8 @@ export default function Home({menuStatus, menuToggle}) {
           <InDepthServices/>
 
           <TellUs/>
+
+          <AboutUs/>
 
 
         </div>

@@ -8,7 +8,7 @@ export function Promise(){
         
 
         <h2 className="text-[25px] md:text-3xl max-w-[800px] text-left flex-wrap">
-        "AREO3D exceeded expectations with digital marketing strategies that drove higher 
+        "AERO3D exceeded expectations with digital marketing strategies that drove higher 
         engagement, optimized our online presence, and fueled significant growth."
         </h2>
 
