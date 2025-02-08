@@ -35,11 +35,18 @@ export default function Home({menuStatus, menuToggle}) {
           
                   </div>
 
-        <div className={`bg-white w-[98vw] flex flex-col pb-[30px] md:gap-[10vh] translate-x-[1vw] rounded-[20px] h-fit absolute 
+        <div className={`bg-white w-[98vw] flex flex-col pb-[30px] gap-[10vh] translate-x-[1vw] rounded-[20px] h-fit absolute 
           z-1 mt-[10px] ${!menuStatus?"md:translate-y-[100vh] translate-y-[155vh]":"translate-y-[0vh]"} duration-[.3s] pt-[25vh] overflow-x-hidden overflow-y-scroll` }>
-             
+                  <div className=""> <HeroCard/></div>
+                  <div className=""><Partners/></div>
+                  <div className="">   <Services/></div>
+                  <div className=""><Promise/> </div>
+                  <div className=""> <InDepthServices/></div>
+                  <div className="">  <TellUs/></div>
+                  <div className=""> <AboutUs/></div>
+                  <div className=""><Footer/></div>
           {/* all website body components here */}
-          <HeroCard/>
+          {/* <HeroCard/>
          
           <Partners/>
 
@@ -53,7 +60,8 @@ export default function Home({menuStatus, menuToggle}) {
 
           <AboutUs/>
 
-          <Footer/>
+          <Footer/> */}
+          
 
 
         </div>

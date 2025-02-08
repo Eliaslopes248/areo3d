@@ -3,18 +3,20 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa';
 
 export function Footer() {
   return (
-    <div className="relative w-full h-fit p-[5%] border-0 flex flex-wrap justify-start gap-[20px]">
+    <div className="relative w-full h-fit p-[5%] border-0 flex flex-wrap  gap-[30px]">
 
-        <div className=" border-0">Copyright ©2025 ÆRO3D. All rights reserved.</div>
-        <div className="border-0">Term of Services Privacy Policy Cookie Policy</div>
+        <div className=" text-gray-500 border-0">Copyright ©2025 ÆRO3D. All rights reserved.</div>
+        <div className="text-gray-500 border-0">Term of Services Privacy Policy Cookie Policy</div>
         
-        <div className="size-fit flex flex-col gap-[10px] lg:ml-auto lg:mr-14">
-            <h3 className='text-[17px] text-black'>Follow Us</h3>
+        <div className="size-fit flex flex-col gap-[20px] lg:ml-auto lg:mr-14">
+            <h3 className='text-[17px] text-black '>Follow Us</h3>
             <div className="border-0 flex gap-6">
-                <FaFacebook className='size-10'/>
-                <FaInstagram className='size-10'/>
-                <FaLinkedin className='size-10'/>
-                <FaYoutube className='size-10'/>
+                <a href="https://www.facebook.com/AERO3DSocial/"><FaFacebook className='size-[30px]  hover:text-gray-500 duration-[.2s]'/></a>
+                <a href="https://www.instagram.com/aero3d.co/"><FaInstagram className='size-[30px] hover:text-gray-500 duration-[.2s]'/></a>
+                <a href="https://www.linkedin.com/company/aero3dmarketing/"><FaLinkedin className='size-[30px] hover:text-gray-500 duration-[.2s]'/></a>
+                <a href="https://www.youtube.com/@Aero3DMarketing">  <FaYoutube className='size-[30px] hover:text-gray-500 duration-[.2s]'/></a>
+              
+              
             </div>
         </div>
       

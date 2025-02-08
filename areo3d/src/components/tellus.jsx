@@ -1,40 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 
 export function TellUs() {
-  const [formStatus, setForm] = useState(false);
-  const [inView, setInView] = useState(false);
-  const mainRef = useRef(null);
-
-  const handleClick = () => {
-    setForm((prev) => !prev);
-    setInView(false); // Reset inView to re-trigger the animation
-    setTimeout(() => {
-      setInView(true); // Set inView to true after a short delay to trigger the animation
-    }, 5);
-  };
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const entry = entries[0];
-        setInView(entry.isIntersecting);
-      },
-      { threshold: 0.1 }
-    );
-
-    if (mainRef.current) {
-      observer.observe(mainRef.current);
-    }
-
-    return () => {
-      if (mainRef.current) {
-        observer.unobserve(mainRef.current);
-      }
-    };
-  }, []);
+  
 
   return (
-    <div ref={mainRef} className="w-full h-fit size-fit lg:p-[60px] bg-white border-0 flex justify-center items-center main">
+    <div  className="w-full h-fit size-fit lg:p-[60px] bg-white border-0 flex justify-center items-center">
       <style>
         {`
           .fade-in {
@@ -67,25 +37,16 @@ export function TellUs() {
         `}
       </style>
 
-      {/* initial prompt safe here... */}
-      {!formStatus ? (
-        <div className="bg-black rounded-[40px] md:rounded-[30px] justify-evenly w-full lg:w-[60vw] h-[55vh] p-[50px] lg:p-[150px] flex flex-col items-center gap-[40px] lg:items-start md:gap-[30px] prompt">
-          <h1 className={`text-white text-4xl text-center ${inView ? 'fade-in' : ''}`}>Tell us about your project</h1>
-          <button onClick={handleClick} className={`bg-white text-black p-[10px] w-[200px] lg:w-[130px] rounded-[25px] hover:bg-gray-100 duration-[.1s] ${inView ? 'fade-in' : ''}`}>
-            Say Hi
-          </button>
-          <hr className={`text-gray-700 lg:w-[70%] w-[85%] ${inView ? 'fade-in' : ''}`} />
-        </div>
-      ) : (
-        <div className="bg-red-300 rounded-[40px] md:rounded-[30px] justify-evenly w-full lg:w-[60vw] h-[55vh] p-[50px] lg:p-[150px] flex flex-col items-center gap-[40px] lg:items-start md:gap-[30px] form-con">
-          <h1 className={`text-white text-4xl text-center ${inView ? 'fade-in' : ''}`}>Project Details</h1>
-          <button onClick={handleClick} className={`bg-white text-black p-[10px] w-[200px] lg:w-[130px] rounded-[25px] hover:bg-gray-100 duration-[.1s] ${inView ? 'fade-in' : ''}`}>
-            Exit
-          </button>
-          <hr className={`text-gray-700 lg:w-[70%] w-[85%] ${inView ? 'fade-in' : ''}`} />
-          {/* Add your form fields here */}
-        </div>
-      )}
-    </div>
+          <div className="w-full md:w-[70%] lg:w-[60%] bg-black rounded-[40px] h-fit min-w-fit min-h-fit flex flex-col flex-wrap text-white p-[3%] gap-[25px]">
+
+  
+              
+              </div>
+
+       
+
+
+      </div>
+      
   );
 }

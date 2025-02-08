@@ -62,20 +62,20 @@ export default function Menu({menuStatus, menuToggle}) {
                 <h3 className='text-white'>Follow us</h3>
                 <div className="w-full h-fit  flex justify-start gap-[15px] items-center">
 
-                  <a href="">
-                    <FaFacebook className='text-white size-[30px]' />
+                  <a href="https://www.facebook.com/AERO3DSocial/">
+                    <FaFacebook className='text-white size-[30px] hover:text-gray-500 duration-[.2s]' />
                   </a>
 
-                  <a href="">
-                    <FaInstagram className='text-white size-[30px]' />
+                  <a href="https://www.instagram.com/aero3d.co/">
+                    <FaInstagram className='text-white size-[30px] hover:text-gray-500 duration-[.2s]' />
                   </a>
 
-                  <a href="">
-                    <FaLinkedin className='text-white size-[30px]' />
+                  <a href="https://www.linkedin.com/company/aero3dmarketing/">
+                    <FaLinkedin className='text-white size-[30px] hover:text-gray-500 duration-[.2s]' />
                   </a>
 
-                  <a href="">
-                    <FaYoutube className='text-white size-[30px]' />
+                  <a href="https://www.youtube.com/@Aero3DMarketing">
+                    <FaYoutube className='text-white size-[30px] hover:text-gray-500 duration-[.2s]' />
                   </a>
 
 

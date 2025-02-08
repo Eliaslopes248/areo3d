@@ -48,7 +48,7 @@ export function Services() {
 
   return (
     <div ref={servicesRef} className="w-full h-fit border-0 bg-white translate-x-[0vw] flex flex-col md:mt-[0vh] pt-[55px] justify-evenly p-[20px] lg:pt-[200px] pb-[150px] services-con">
-      <h1 className="text-6xl ml-[5vw] md:ml-[10vw] lg:text-7xl lg:ml-[16.5vw]">
+      <h1 className="text-5xl ml-[5vw] md:ml-[10vw] lg:text-7xl lg:ml-[16.5vw]">
         Marketing Services
       </h1>
 
@@ -60,7 +60,7 @@ export function Services() {
         {serviceCards.map((card, index) => (
           <div
             key={index}
-            className={`border-[.5px] w-full h-96 rounded-[20px] card lg:w-[30%] md:aspect-square border-gray-300 hover:bg-gray-100 duration-[.1s] flex flex-col pb-[30px] pt-[35px] gap-[20px] ${
+            className={`border-[.5px] w-full h-96 min-h-fit rounded-[20px] card lg:w-[30%] md:aspect-square border-gray-300 hover:bg-gray-100 duration-[.1s] flex flex-col pb-[30px] pt-[35px] gap-[20px] ${
               inView ? 'fade-in' : ''
             }`}
           >
