@@ -14,15 +14,15 @@ export function Footer() {
        
 
         <div className="size-fit flex flex-col justify-center gap-[20px] lg:ml-auto lg:mr-14">
+
             <h3 className='text-[17px] text-black '>Follow Us</h3>
             <div className="border-0 flex gap-6">
                 <a href="https://www.facebook.com/AERO3DSocial/"><FaFacebook className='size-[30px]  hover:text-gray-500 duration-[.2s]'/></a>
                 <a href="https://www.instagram.com/aero3d.co/"><FaInstagram className='size-[30px] hover:text-gray-500 duration-[.2s]'/></a>
                 <a href="https://www.linkedin.com/company/aero3dmarketing/"><FaLinkedin className='size-[30px] hover:text-gray-500 duration-[.2s]'/></a>
-                <a href="https://www.youtube.com/@Aero3DMarketing">  <FaYoutube className='size-[30px] hover:text-gray-500 duration-[.2s]'/></a>
-              
-              
+                <a href="https://www.youtube.com/@Aero3DMarketing">  <FaYoutube className='size-[30px] hover:text-gray-500 duration-[.2s]'/></a>   
             </div>
+
         </div>
       
     </div>
