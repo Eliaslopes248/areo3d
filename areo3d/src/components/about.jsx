@@ -5,7 +5,7 @@ import { Canvas } from "@react-three/fiber";
 export function AboutUs(){
 
 
-    return <div className="w-full h-[60vh] flex  mt-[10vh]  ">
+    return <div className="w-full h-[60vh] size-fit flex  mt-[10vh]  ">
 
             <div className='flex flex-col gap-[25px] items-center justify-center w-full md:h-full h-fit 
               bg-black pb-[40px] pt-[40px] rounded-[40px]  '>

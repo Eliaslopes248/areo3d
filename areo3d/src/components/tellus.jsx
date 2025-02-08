@@ -34,7 +34,7 @@ export function TellUs() {
   }, []);
 
   return (
-    <div ref={mainRef} className="w-full h-fit lg:p-[60px] bg-white border-0 flex justify-center items-center main">
+    <div ref={mainRef} className="w-full h-fit size-fit lg:p-[60px] bg-white border-0 flex justify-center items-center main">
       <style>
         {`
           .fade-in {

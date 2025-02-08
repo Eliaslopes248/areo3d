@@ -21,19 +21,19 @@ export function Footer(){
 
                 <div className=" w-[85%] md:w-fit md:ml-auto md:mr-[2vw] h-fit p-[10px] flex flex-wrap gap-[15px] md:gap-[40px] ">
                         <a href="">
-                            <FaFacebook className='text-black size-[40px]' />
+                            <FaFacebook className='text-black size-8' />
                         </a>
 
                         <a href="">
-                            <FaInstagram className='text-black size-[40px]' />
+                            <FaInstagram className='text-black size-8' />
                         </a>
 
                         <a href="">
-                            <FaLinkedin className='text-black size-[40px]' />
+                            <FaLinkedin className='text-black size-8' />
                         </a>
 
                         <a href="">
-                            <FaYoutube className='text-black size-[40px]' />
+                            <FaYoutube className='text-black size-8' />
                         </a>
                 </div>
                 
