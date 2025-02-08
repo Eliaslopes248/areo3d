@@ -35,7 +35,8 @@ export default function Home({menuStatus, menuToggle}) {
           
                   </div>
 
-        <div className={`bg-white w-[98vw] translate-x-[1vw] rounded-[20px] h-fit absolute z-1 mt-[10px] ${!menuStatus?"md:translate-y-[100vh] translate-y-[155vh]":"translate-y-[0vh]"} duration-[.3s] pt-[25vh] overflow-x-hidden overflow-y-scroll` }>
+        <div className={`bg-white w-[98vw] flex flex-col pb-[30px] md:gap-[10vh] translate-x-[1vw] rounded-[20px] h-fit absolute 
+          z-1 mt-[10px] ${!menuStatus?"md:translate-y-[100vh] translate-y-[155vh]":"translate-y-[0vh]"} duration-[.3s] pt-[25vh] overflow-x-hidden overflow-y-scroll` }>
              
           {/* all website body components here */}
           <HeroCard/>
