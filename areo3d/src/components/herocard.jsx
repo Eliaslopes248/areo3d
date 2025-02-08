@@ -3,7 +3,7 @@ export function HeroCard(){
 
     return(
 
-        <div className="w-full h-[60vh]  text-left">
+        <div className="w-full h-[60vh]  text-left overflow-hidden">
 
             <style>
                 {`

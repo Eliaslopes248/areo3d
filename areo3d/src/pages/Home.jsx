@@ -11,6 +11,7 @@ import { InDepthServices } from '../components/in-depth-services';
 import { TellUs } from '../components/tellus';
 import React from 'react'
 import { AboutUs } from '../components/about';
+import { Footer } from '../components/footer';
 
 
 export default function Home({menuStatus, menuToggle}) {
@@ -34,7 +35,7 @@ export default function Home({menuStatus, menuToggle}) {
           
                   </div>
 
-        <div className={`bg-white w-[98vw] translate-x-[1vw] rounded-[20px] h-fit absolute z-1 mt-[10px] ${!menuStatus?"md:translate-y-[100vh] translate-y-[155vh]":"translate-y-[0vh]"} duration-[.3s] pt-[25vh] overflow-x-hidden` }>
+        <div className={`bg-white w-[98vw] translate-x-[1vw] rounded-[20px] h-fit absolute z-1 mt-[10px] ${!menuStatus?"md:translate-y-[100vh] translate-y-[155vh]":"translate-y-[0vh]"} duration-[.3s] pt-[25vh] overflow-x-hidden overflow-y-scroll` }>
              
           {/* all website body components here */}
           <HeroCard/>
@@ -50,6 +51,8 @@ export default function Home({menuStatus, menuToggle}) {
           <TellUs/>
 
           <AboutUs/>
+
+          <Footer/>
 
 
         </div>

@@ -60,7 +60,7 @@ export function Services() {
         {serviceCards.map((card, index) => (
           <div
             key={index}
-            className={`border-[.5px] w-full h-96 rounded-[20px] card lg:w-[30%] md:aspect-square border-gray-300 hover:bg-gray-100 duration-[.1s] flex flex-col pt-[35px] gap-[20px] ${
+            className={`border-[.5px] w-full h-96 rounded-[20px] card lg:w-[30%] md:aspect-square border-gray-300 hover:bg-gray-100 duration-[.1s] flex flex-col pb-[30px] pt-[35px] gap-[20px] ${
               inView ? 'fade-in' : ''
             }`}
           >
