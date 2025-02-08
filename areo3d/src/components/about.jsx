@@ -1,6 +1,6 @@
 export function AboutUs() {
     return (
-      <div className="w-full h-[60vh] size-fit flex mt-[10vh] mb-[10vh]">
+      <div className="w-full h-[60vh] size-fit flex mt-[10vh] mb-[0vh]">
         <div className='flex flex-col gap-[25px] items-center justify-center w-full h-fit bg-black p-[5%] rounded-[40px]'>
           <h1 className='text-5xl md:text-5xl lg:text-5xl text-white'>About Us</h1>
           <h2 className='text-white text-[14px] w-[90%] md:w-fit md:text-[15px] ml-[0vw]'>
